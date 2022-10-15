@@ -1,3 +1,4 @@
+from telegram import update
 from telegram.ext import updater
 from telegram.ext import CommandHandler, MessageHandler, Filters
 import os
@@ -44,5 +45,3 @@ updater.idle()
 
 if __name__ == '__main__':
     main()
-
-
