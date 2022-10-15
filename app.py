@@ -1,4 +1,4 @@
-from telegram.ext import updater, Application
+from telegram.ext import updater
 from telegram.ext import CommandHandler, MessageHandler, Filters
 import os
 
@@ -36,7 +36,7 @@ def main():
     dp.add_error_handler(error)
 
 
-updater.start_webhook(listen="0.0.0.0", port=os.environ.get("PORT", 443),
+async start_webhook(listen="0.0.0.0", port=os.environ.get("PORT", 443),
                       url_path=TOKEN,
                       webhook_url="https://telegrambotpython12.app.heroku.com/" + TOKEN)
 
