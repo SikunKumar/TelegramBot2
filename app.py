@@ -22,7 +22,11 @@ def details(update, context):
 
 def error(update, context):
     context.bot.send_message(update.message.chat.id, "Oops! Error encountered ")
-
+    
+    def error(update, context):
+    context.bot.send_message(update.message.chat.id, "not Found ")
+def error(update, context):
+    context.bot.send_message(update.message.chat.id, "not Found ")
 
 def main():
     update = Updater(token=TOKEN)
